@@ -12,7 +12,7 @@ public class D {
         System.out.println(t);
         //also
         long l=123;
-        byte b= (byte)(int) l;//it means long converted into int and int converted into byte
+        byte b= (byte)(int) l; //it means long converted into int and int converted into byte
         System.out.println(b);
     }
 }
