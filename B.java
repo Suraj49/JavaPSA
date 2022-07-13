@@ -16,10 +16,14 @@ public class B {
     // use anywhere in the class.
     int j; // not mandatory to initialized. automatically get some value by compiler
 
+    // static ref. variable
+    static B b4=new B(); //static ref variable declered outside of the method but inside of the class
     public static void main(String[] args) {
         System.out.println(B.x); //We can access static variable through class name
         System.out.println(y);//also we can access directly ; by compiler it is converted into (B.x)
-        B b1=new B();
+        // Static variable :- local ref. variable and static ref variable
+        B b1=new B();  //local ref. variable can creat within a method and use in same method
+        //we cant access any thing thorogh b1 form outside of this method;
         System.out.println(b1.x); //also we can access through ref variable, is will gives warning
         System.out.println(b1.i); // reference variable is mandatory to access non static variable
         System.out.println(b1.j);
@@ -34,5 +38,7 @@ public class B {
         System.out.println(d); //we can access local variable directly
         int e;
        // System.out.println(e); // we can't use local variable without initialized it will give error
+        //System.out.println(b1.i);error becouse using local ref variable
+        System.out.println(b4.i);//correct becouse b4 is static variable
     }
 }
