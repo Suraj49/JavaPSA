@@ -27,6 +27,13 @@ public class H {
         System.out.println(j);
 
     }
+    static int k;
+    { //3. IIB Block..
+        //we can Initialized static variable
+        System.out.println("3. IIB Block");
+        k=20;
+        System.out.println(k);
+    }
 
     public static void main(String[] args) {
         H h=new H(); // IIB run automatically when object is created.
