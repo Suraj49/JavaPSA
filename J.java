@@ -6,11 +6,12 @@ public class J {
     static int j=20;
     int t;
     J(){
+        this(5);
         System.out.println("It is called using This keyword");
     }
     J(int t){
         //we can call constructor through this key . to call constructor write this() and it should be very first statement of another constructor
-        this();
+        //this();
         this.t=t;//this.t means non static variable because this cannot access local variable
         //copying the value of t into non static variable
         System.out.println(this.t);
