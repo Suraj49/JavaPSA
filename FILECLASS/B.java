@@ -3,6 +3,7 @@ package FILECLASS;
 import java.io.File;
 
 public class B {
+    //file class can check file is present or not
     public static void main(String[] args) {
         try {
             File f = new File("E://Suraj.txt");
