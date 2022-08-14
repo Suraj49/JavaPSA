@@ -10,9 +10,6 @@ public class A {
            // System.out.println(r.read());// it return the number
             //so we have to convert into char
             System.out.println((char)r.read());//but it will show only one letter
-            for(int i=0;i<10;i++){
-                System.out.print((char)r.read());
-            }
         }catch (Exception e){
             System.out.println(e);
         }
