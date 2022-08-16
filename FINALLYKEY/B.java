@@ -4,7 +4,7 @@ public class B {
     public static void main(String[] args) {
         try{
             System.out.println("try block");
-        }finally {
+        }finally { //we can use finally after try block
             System.out.println("finally block");
         }
     }
